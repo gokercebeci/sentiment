@@ -1,19 +1,26 @@
 {
   "author": "Andrew Sliwinski <andrewsliwinski@acm.org>",
-  "name": "sentiment",
-  "description": "AFINN-based sentiment analysis for Node.js",
-  "version": "4.1.0",
+  "contributors": [
+    {
+      "name": "Göker Cebeci",
+      "url": "https://github.com/gokercebeci"
+    }
+  ],
+  "name": "sentiment-turkish",
+  "description": "Turkish translated, AFINN-based sentiment analysis for Node.js",
+  "version": "1.0.1",
   "license": "MIT",
-  "homepage": "https://github.com/thisandagain/sentiment",
+  "homepage": "https://github.com/gokercebeci/sentiment-turkish",
   "repository": {
     "type": "git",
-    "url": "https://github.com/thisandagain/sentiment.git"
+    "url": "https://github.com/gokercebeci/sentiment-turkish.git"
   },
   "keywords": [
     "sentiment",
     "analysis",
     "nlp",
-    "sentiment analysis"
+    "sentiment analysis",
+    "turkish"
   ],
   "main": "./lib/index.js",
   "scripts": {
