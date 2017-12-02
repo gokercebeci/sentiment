@@ -3,7 +3,7 @@ TAP=./node_modules/.bin/tap
 
 # ------------------------------------------------------------------------------
 
-# Builds a JSON representation of the raw AFINN word list
+# Builds a JSON representation of the raw AFINN-TR word list
 build:
 	node ./build/build.js
 
@@ -18,6 +18,9 @@ test:
 	@make lint
 	@make validate
 	$(TAP) ./test/{unit,integration}/*.js
+
+unit:
+	$(TAP) ./test/unit/*.js
 
 # ------------------------------------------------------------------------------
 

@@ -1,10 +1,10 @@
 var test = require('tap').test;
 var sentiment = require('../../lib/index');
 
-var dataset = 'constructor';
+var dataset = 'inşaatçı';
 var result = sentiment(dataset);
 
-test('synchronous positive', function (t) {
+test('synchronous positive gh13', function (t) {
     t.type(result, 'object');
     t.equal(result.score, 0);
     t.equal(result.comparative, 0);

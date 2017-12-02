@@ -3,7 +3,7 @@ var fs = require('fs');
 var path = require('path');
 
 // File paths
-var AFINN_PATH = path.resolve(__dirname, 'AFINN-en-165.txt');
+var AFINN_PATH = path.resolve(__dirname, 'AFINN-tr-165.txt');
 var EMOJI_PATH = path.resolve(__dirname, 'Emoji_Sentiment_Data_v1.0.csv');
 var RESULT_PATH = path.resolve(__dirname, 'build.json');
 

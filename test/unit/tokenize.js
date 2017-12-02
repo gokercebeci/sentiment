@@ -21,28 +21,28 @@ test('spec', function (t) {
 
 test('english', function (t) {
     t.deepEqual(
-        tokenize('The cat went over the wall.'),
-        ['the', 'cat', 'went', 'over', 'the', 'wall']
+        tokenize('Kedi duvarın arkasına gitti.'),
+        ['kedi', 'duvarın', 'arkasına', 'gitti']
     );
     t.deepEqual(
-        tokenize('That\'ll cause problems for the farmer\'s pigs'),
-        ['that\'ll', 'cause', 'problems', 'for', 'the', 'farmer\'s', 'pigs']
+        tokenize('Çiftçi\'nin domuzları soruna neden olacak'),
+        ['çiftçi\'nin', 'domuzları', 'soruna', 'neden', 'olacak']
     );
     t.end();
 });
 
 test('diacritic', function (t) {
     t.deepEqual(
-        tokenize('This approach is naïve.'),
-        ['this', 'approach', 'is', 'naïve']
+        tokenize('Bu yaklaşım naïve.'),
+        ['bu', 'yaklaşım', 'naïve']
     );
     t.deepEqual(
-        tokenize('The puppy bowl team was very coöperative.'),
-        ['the', 'puppy', 'bowl', 'team', 'was', 'very', 'coöperative']
+        tokenize('Minikler takımı çok coöperative.'),
+        ['minikler', 'takımı', 'çok', 'coöperative']
     );
     t.deepEqual(
-        tokenize('The soufflé was delicious!'),
-        ['the', 'soufflé', 'was', 'delicious']
+        tokenize('Bu soufflé çok lezzetli!'),
+        ['bu', 'soufflé', 'çok', 'lezzetli']
     );
     t.end();
 });
